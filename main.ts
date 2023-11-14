@@ -25,6 +25,7 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setStayInScreen(true)
+music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.UntilDone)
 info.setScore(0)
 info.startCountdown(10)
 game.onUpdateInterval(500, function () {
